@@ -117,3 +117,4 @@
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/obj/Debug/net8.0/OpenFinance.Validation.Tests.pdb
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/obj/Debug/net8.0/OpenFinance.Validation.Tests.genruntimeconfig.cache
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/obj/Debug/net8.0/ref/OpenFinance.Validation.Tests.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/bin/Debug/net8.0/OpenFinance.Validation.Infrastructure.xml

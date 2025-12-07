@@ -15,3 +15,5 @@
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Infrastructure/obj/Debug/net8.0/refint/OpenFinance.Validation.Infrastructure.dll
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Infrastructure/obj/Debug/net8.0/OpenFinance.Validation.Infrastructure.pdb
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Infrastructure/obj/Debug/net8.0/ref/OpenFinance.Validation.Infrastructure.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Infrastructure/bin/Debug/net8.0/OpenFinance.Validation.Infrastructure.xml
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Infrastructure/obj/Debug/net8.0/OpenFinance.Validation.Infrastructure.xml
