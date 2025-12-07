@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    
+    <!-- Metadados do NuGet Package -->
+    <PackageId>OpenFinance.Validation</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Marco Bagdal</Authors>
+    <Company>Bagdal.Co</Company>
+    <Description>Biblioteca de validação para Open Finance Brasil - Valida tokens OAuth2, assinaturas JWT, headers FAPI e certificados mTLS</Description>
+    <PackageTags>open-finance;fapi;oauth2;jwt;validation;brazil;open-banking</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/seu-usuario/openfinance-validation</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/seu-usuario/openfinance-validation</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    
+    <!-- Gera XML documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    
+    <!-- Inclui símbolos para debugging -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenFinance.Validation.Domain\OpenFinance.Validation.Domain.csproj" />
+    <ProjectReference Include="..\OpenFinance.Validation.Application\OpenFinance.Validation.Application.csproj" />
+    <ProjectReference Include="..\OpenFinance.Validation.Infrastructure\OpenFinance.Validation.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

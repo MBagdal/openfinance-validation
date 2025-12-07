@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3DF93A93-6CAC-4365-A42C-ACA9BC9C0163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFinance.Validation.Domain", "src\OpenFinance.Validation.Domain\OpenFinance.Validation.Domain.csproj", "{6D2678E2-D7E9-4AA5-BB89-C240A8F96B92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFinance.Validation.Application", "src\OpenFinance.Validation.Application\OpenFinance.Validation.Application.csproj", "{655D6807-9EBE-43A7-8A11-781433BA261E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFinance.Validation.Infrastructure", "src\OpenFinance.Validation.Infrastructure\OpenFinance.Validation.Infrastructure.csproj", "{98AE597C-EF4C-4CC8-A675-16D09AD38B10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFinance.Validation", "src\OpenFinance.Validation\OpenFinance.Validation.csproj", "{36F4BFC4-9416-4185-BBDD-B10D3C827C23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7642602C-3D58-40CA-A55E-FC3D7FD3DBFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFinance.Validation.Tests", "tests\OpenFinance.Validation.Tests\OpenFinance.Validation.Tests.csproj", "{562F384C-545F-4CAD-92EC-45604A1E158E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D2678E2-D7E9-4AA5-BB89-C240A8F96B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2678E2-D7E9-4AA5-BB89-C240A8F96B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2678E2-D7E9-4AA5-BB89-C240A8F96B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2678E2-D7E9-4AA5-BB89-C240A8F96B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655D6807-9EBE-43A7-8A11-781433BA261E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655D6807-9EBE-43A7-8A11-781433BA261E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655D6807-9EBE-43A7-8A11-781433BA261E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655D6807-9EBE-43A7-8A11-781433BA261E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98AE597C-EF4C-4CC8-A675-16D09AD38B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98AE597C-EF4C-4CC8-A675-16D09AD38B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98AE597C-EF4C-4CC8-A675-16D09AD38B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98AE597C-EF4C-4CC8-A675-16D09AD38B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F4BFC4-9416-4185-BBDD-B10D3C827C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F4BFC4-9416-4185-BBDD-B10D3C827C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F4BFC4-9416-4185-BBDD-B10D3C827C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F4BFC4-9416-4185-BBDD-B10D3C827C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562F384C-545F-4CAD-92EC-45604A1E158E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562F384C-545F-4CAD-92EC-45604A1E158E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562F384C-545F-4CAD-92EC-45604A1E158E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562F384C-545F-4CAD-92EC-45604A1E158E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D2678E2-D7E9-4AA5-BB89-C240A8F96B92} = {3DF93A93-6CAC-4365-A42C-ACA9BC9C0163}
+		{655D6807-9EBE-43A7-8A11-781433BA261E} = {3DF93A93-6CAC-4365-A42C-ACA9BC9C0163}
+		{98AE597C-EF4C-4CC8-A675-16D09AD38B10} = {3DF93A93-6CAC-4365-A42C-ACA9BC9C0163}
+		{36F4BFC4-9416-4185-BBDD-B10D3C827C23} = {3DF93A93-6CAC-4365-A42C-ACA9BC9C0163}
+		{562F384C-545F-4CAD-92EC-45604A1E158E} = {7642602C-3D58-40CA-A55E-FC3D7FD3DBFE}
+	EndGlobalSection
+EndGlobal

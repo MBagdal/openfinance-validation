@@ -1,0 +1,15 @@
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/bin/Debug/net8.0/OpenFinance.Validation.Application.deps.json
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/bin/Debug/net8.0/OpenFinance.Validation.Application.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/bin/Debug/net8.0/OpenFinance.Validation.Application.pdb
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/bin/Debug/net8.0/OpenFinance.Validation.Domain.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/bin/Debug/net8.0/OpenFinance.Validation.Domain.pdb
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/OpenFinance.Validation.Application.csproj.AssemblyReference.cache
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/OpenFinance.Validation.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/OpenFinance.Validation.Application.AssemblyInfoInputs.cache
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/OpenFinance.Validation.Application.AssemblyInfo.cs
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/OpenFinance.Validation.Application.csproj.CoreCompileInputs.cache
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/OpenFina.0A577A21.Up2Date
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/OpenFinance.Validation.Application.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/refint/OpenFinance.Validation.Application.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/OpenFinance.Validation.Application.pdb
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation.Application/obj/Debug/net8.0/ref/OpenFinance.Validation.Application.dll
