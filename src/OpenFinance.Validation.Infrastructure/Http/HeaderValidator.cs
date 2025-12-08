@@ -8,7 +8,7 @@ namespace OpenFinance.Validation.Infrastructure.Http;
 /// </summary>
 public class HeaderValidator : IHeaderValidator
 {
-    public bool ValidatePostHeaders(HttpRequest request)
+    public bool ValidateIdempotencyHeaders(HttpRequest request)
     {
         var contentType = request.Headers["Content-Type"].ToString();
 
@@ -21,7 +21,7 @@ public class HeaderValidator : IHeaderValidator
         return hasContentType && hasInteractionId && hasIdempotencyKey;
     }
 
-    public bool ValidateGetHeaders(HttpRequest request)
+    public bool ValidateNonIdempotencyHeaders(HttpRequest request)
     {
         return request.Headers.ContainsKey("x-fapi-interaction-id");
     }

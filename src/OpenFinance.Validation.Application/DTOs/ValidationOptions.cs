@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Http;
+using OpenFinance.Validation.Domain.Constants;
+
 namespace OpenFinance.Validation.Application.DTOs;
 
 /// <summary>
@@ -24,4 +27,26 @@ public class ValidationOptions
     /// Se deve extrair e validar o payload assinado
     /// </summary>
     public bool IsPayloadExtractionNecessary { get; set; }
+
+    /// <summary>
+    /// Configura a validação de idempotência baseado no método HTTP da requisição
+    /// </summary>
+    /// <param name="request">HttpRequest para análise</param>
+    public void SetIdempotencyValidationFromRequest(HttpRequest request)
+    {
+        IsIdempotencyValidationNecessary = HttpMethodHelper.RequiresIdempotencyValidation(request.Method);
+    }
+
+    /// <summary>
+    /// Auto-configura todas as opções baseado no método HTTP da requisição
+    /// </summary>
+    /// <param name="request">HttpRequest para análise</param>
+    public void AutoConfigureFromRequest(HttpRequest request)
+    {
+        var method = request.Method.ToUpperInvariant();
+        
+        SetIdempotencyValidationFromRequest(request);
+        IsPayloadExtractionNecessary = HttpMethodHelper.CanHaveRequestBody(method);
+        IsAudienceValidationNecessary = true;
+    }
 }

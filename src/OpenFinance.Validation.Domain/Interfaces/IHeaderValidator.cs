@@ -10,10 +10,10 @@ public interface IHeaderValidator
     /// <summary>
     /// Valida headers obrigatórios para requisições POST
     /// </summary>
-    bool ValidatePostHeaders(HttpRequest request);
+    bool ValidateIdempotencyHeaders(HttpRequest request);
     
     /// <summary>
     /// Valida headers obrigatórios para requisições GET
     /// </summary>
-    bool ValidateGetHeaders(HttpRequest request);
+    bool ValidateNonIdempotencyHeaders(HttpRequest request);
 }

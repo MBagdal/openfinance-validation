@@ -61,11 +61,11 @@ public class JwtSignatureValidator : IRequestSignatureValidator
         }
     }
 
-    private async Task<object?> ValidateSignedRequestAsync(
-        JsonWebKeySet clientJwks,
-        string clientOrganisationId,
-        string signedRequestBody,
-        string? audience)
+    private Task<object?> ValidateSignedRequestAsync(
+    JsonWebKeySet clientJwks,
+    string clientOrganisationId,
+    string signedRequestBody,
+    string? audience)
     {
         try
         {
@@ -86,12 +86,12 @@ public class JwtSignatureValidator : IRequestSignatureValidator
             var principal = handler.ValidateToken(signedRequestBody, validationParameters, out var validatedToken);
             var jwtToken = validatedToken as JwtSecurityToken;
 
-            return jwtToken?.Payload;
+            return Task.FromResult<object?>(jwtToken?.Payload);
         }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Erro ao tentar validar a assinatura da requisição");
-            return null;
+            return Task.FromResult<object?>(null);
         }
     }
 }

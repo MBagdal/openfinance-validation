@@ -32,6 +32,16 @@
             Validador principal para requisições Open Finance Brasil
             </summary>
         </member>
+        <member name="M:OpenFinance.Validation.OpenFinanceValidator.ValidateRequestAsync(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Valida uma requisição Open Finance completa com auto-configuração
+            </summary>
+            <param name="request">HttpRequest da requisição</param>
+            <returns>Resultado da validação</returns>
+            <exception cref="T:OpenFinance.Validation.Domain.Exceptions.UnauthorisedException">Token inválido ou ausente</exception>
+            <exception cref="T:OpenFinance.Validation.Domain.Exceptions.BadRequestException">Headers obrigatórios ausentes</exception>
+            <exception cref="T:OpenFinance.Validation.Domain.Exceptions.BadSignatureException">Assinatura JWT inválida</exception>
+        </member>
         <member name="M:OpenFinance.Validation.OpenFinanceValidator.ValidateRequestAsync(Microsoft.AspNetCore.Http.HttpRequest,OpenFinance.Validation.Application.DTOs.ValidationOptions)">
             <summary>
             Valida uma requisição Open Finance completa
@@ -42,6 +52,26 @@
             <exception cref="T:OpenFinance.Validation.Domain.Exceptions.UnauthorisedException">Token inválido ou ausente</exception>
             <exception cref="T:OpenFinance.Validation.Domain.Exceptions.BadRequestException">Headers obrigatórios ausentes</exception>
             <exception cref="T:OpenFinance.Validation.Domain.Exceptions.BadSignatureException">Assinatura JWT inválida</exception>
+        </member>
+        <member name="M:OpenFinance.Validation.OpenFinanceValidator.ValidateAuthenticationAsync(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Valida a autenticação da requisição
+            </summary>
+        </member>
+        <member name="M:OpenFinance.Validation.OpenFinanceValidator.ValidateHeaders(Microsoft.AspNetCore.Http.HttpRequest,OpenFinance.Validation.Application.DTOs.ValidationOptions)">
+            <summary>
+            Valida os headers obrigatórios da requisição
+            </summary>
+        </member>
+        <member name="M:OpenFinance.Validation.OpenFinanceValidator.GetAudience(Microsoft.AspNetCore.Http.HttpRequest,OpenFinance.Validation.Application.DTOs.ValidationOptions)">
+            <summary>
+            Obtém o audience se necessário
+            </summary>
+        </member>
+        <member name="M:OpenFinance.Validation.OpenFinanceValidator.ValidateSignatureAndExtractPayloadAsync(Microsoft.AspNetCore.Http.HttpRequest,OpenFinance.Validation.Domain.ValueObjects.TokenDetails,System.String,OpenFinance.Validation.Application.DTOs.ValidationOptions)">
+            <summary>
+            Valida a assinatura e extrai o payload se necessário
+            </summary>
         </member>
     </members>
 </doc>
