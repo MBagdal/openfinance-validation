@@ -34,7 +34,7 @@ public class ValidationOptions
     /// <param name="request">HttpRequest para análise</param>
     public void SetIdempotencyValidationFromRequest(HttpRequest request)
     {
-        IsIdempotencyValidationNecessary = HttpMethodHelper.RequiresIdempotencyValidation(request.Method);
+        IsIdempotencyValidationNecessary = HttpMethodHelper.IsIdempotent(request.Method);
     }
 
     /// <summary>

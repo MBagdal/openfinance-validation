@@ -25,8 +25,7 @@ public static class HttpMethodHelper
     /// </summary>
     public static bool RequiresIdempotencyValidation(string method)
     {
-        var upperMethod = method.ToUpperInvariant();
-        return upperMethod == HttpMethods.Post || upperMethod == HttpMethods.Patch;
+        return !IsIdempotent(method);
     }
 
     /// <summary>
