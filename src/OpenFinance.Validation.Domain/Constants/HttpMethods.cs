@@ -34,12 +34,11 @@ public static class HttpMethodHelper
     /// </summary>
     public static bool IsIdempotent(string method)
     {
-        var upperMethod = method.ToUpperInvariant();
-        return upperMethod == HttpMethods.Get 
-            || upperMethod == HttpMethods.Put 
-            || upperMethod == HttpMethods.Delete
-            || upperMethod == HttpMethods.Head
-            || upperMethod == HttpMethods.Options;
+        return method == HttpMethods.Get 
+            || method == HttpMethods.Put 
+            || method == HttpMethods.Delete
+            || method == HttpMethods.Head
+            || method == HttpMethods.Options;
     }
 
     /// <summary>
@@ -47,9 +46,8 @@ public static class HttpMethodHelper
     /// </summary>
     public static bool HaveRequestBody(string method)
     {
-        var upperMethod = method.ToUpperInvariant();
-        return upperMethod == HttpMethods.Post 
-            || upperMethod == HttpMethods.Put 
-            || upperMethod == HttpMethods.Patch;
+        return method == HttpMethods.Post 
+            || method == HttpMethods.Put 
+            || method == HttpMethods.Patch;
     }
 }
