@@ -29,15 +29,6 @@ public class ValidationOptions
     public bool IsPayloadExtractionNecessary { get; set; }
 
     /// <summary>
-    /// Configura a validação de idempotência baseado no método HTTP da requisição
-    /// </summary>
-    /// <param name="request">HttpRequest para análise</param>
-    public void SetIdempotencyValidationFromRequest(HttpRequest request)
-    {
-        IsIdempotencyValidationNecessary = HttpMethodHelper.RequiresIdempotencyValidation(request.Method);
-    }
-
-    /// <summary>
     /// Auto-configura todas as opções baseado no método HTTP da requisição
     /// </summary>
     /// <param name="request">HttpRequest para análise</param>
@@ -45,7 +36,7 @@ public class ValidationOptions
     {
         var method = request.Method.ToUpperInvariant();
         
-        SetIdempotencyValidationFromRequest(request);
+        IsIdempotencyValidationNecessary = HttpMethodHelper.RequiresIdempotencyValidation(request.Method);
         IsPayloadExtractionNecessary = HttpMethodHelper.HaveRequestBody(method);
         IsAudienceValidationNecessary = true;
     }
