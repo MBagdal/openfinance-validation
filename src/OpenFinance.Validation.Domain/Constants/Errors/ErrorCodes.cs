@@ -1,4 +1,4 @@
-namespace OpenFinance.Validation.Domain.Constants;
+namespace OpenFinance.Validation.Domain.Constants.Erros;
 
 /// <summary>
 /// Códigos de erro padronizados Open Finance
