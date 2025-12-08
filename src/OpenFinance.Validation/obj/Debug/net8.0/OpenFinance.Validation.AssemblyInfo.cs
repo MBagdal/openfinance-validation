@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Biblioteca de validação para Open Finance Brasil - Valida tokens OAuth2, assinatu" +
     "ras JWT, headers FAPI e certificados mTLS")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89bef53d6115bd6600315bc089f09bbd845ff698")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+364ee44247bda1c75bdaed4ebc154b441c59e6d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenFinance.Validation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenFinance.Validation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

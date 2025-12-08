@@ -1,4 +1,5 @@
 using System.Security.Cryptography.X509Certificates;
+using OpenFinance.Validation.Domain.Constants;
 using OpenFinance.Validation.Domain.Interfaces;
 using OpenFinance.Validation.Domain.ValueObjects;
 
@@ -19,12 +20,16 @@ public class ClientCredentialsPermissionValidator
     /// <summary>
     /// Valida as permissões do client credentials
     /// </summary>
-    public bool Validate(TokenDetails tokenDetails, X509Certificate2? clientCert, string scope)
+    /// <param name="tokenDetails">Detalhes do token</param>
+    /// <param name="clientCert">Certificado do cliente</param>
+    /// <param name="requiredScope">Escopo requerido (padrão: payments)</param>
+    /// <returns>True se válido, False caso contrário</returns>
+    public bool Validate(TokenDetails tokenDetails, X509Certificate2? clientCert, string requiredScope = OAuth2Scopes.Resources)
     {
         if (!tokenDetails.Active)
             return false;
 
-        if (!tokenDetails.HasScope(scope))
+        if (!tokenDetails.HasScope(requiredScope))
             return false;
 
         if (clientCert == null)

@@ -9,7 +9,7 @@ namespace OpenFinance.Validation.Domain.Exceptions;
 public class NotFoundException : ValidationException
 {
     public NotFoundException(ErrorResponse errorResponse) 
-        : base((int)HttpStatusCode.NotFound, errorResponse, "Not Found")
+        : base(HttpStatusCode.NotFound, errorResponse, "Not Found")
     {
     }
 }

@@ -119,3 +119,7 @@
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/obj/Debug/net8.0/ref/OpenFinance.Validation.Tests.dll
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/bin/Debug/net8.0/OpenFinance.Validation.Infrastructure.xml
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/obj/Debug/net8.0/OpenFinance.Validation.Tests.sourcelink.json
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Extensions.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/bin/Debug/net8.0/Microsoft.Net.Http.Headers.dll
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/tests/OpenFinance.Validation.Tests/bin/Debug/net8.0/OpenFinance.Validation.Application.xml

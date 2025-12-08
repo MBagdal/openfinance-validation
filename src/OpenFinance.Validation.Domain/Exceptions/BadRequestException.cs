@@ -9,7 +9,7 @@ namespace OpenFinance.Validation.Domain.Exceptions;
 public class BadRequestException : ValidationException
 {
     public BadRequestException(ErrorResponse errorResponse) 
-        : base((int)HttpStatusCode.BadRequest, errorResponse, "Bad Request")
+        : base(HttpStatusCode.BadRequest, errorResponse, "Bad Request")
     {
     }
 }

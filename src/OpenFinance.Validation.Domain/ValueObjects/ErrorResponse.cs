@@ -25,8 +25,4 @@ public class ErrorDetail
 public class ResponseMeta
 {
     public DateTime RequestDateTime { get; init; } = DateTime.UtcNow;
-    
-    public string RequestDateTimeIso => RequestDateTime.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ");
-
-    public string RequestDateTimeMonetaryIso => RequestDateTime.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffZ");
 }

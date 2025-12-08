@@ -1,4 +1,5 @@
 using OpenFinance.Validation.Application.Interfaces;
+using OpenFinance.Validation.Domain.Constants;
 using OpenFinance.Validation.Domain.ValueObjects;
 
 namespace OpenFinance.Validation.Application.Services;
@@ -16,9 +17,9 @@ public class ResponseService : IResponseService
             {
                 new()
                 {
-                    Code = "UNAUTHORIZED",
-                    Title = "Unauthorised",
-                    Detail = "The authorisation token was not sent or is invalid"
+                    Code = ErrorCodes.Unauthorized,
+                    Title = ErrorTitles.Unauthorized,
+                    Detail = ErrorDetails.Unauthorized
                 }
             },
             Meta = new ResponseMeta()
@@ -33,9 +34,9 @@ public class ResponseService : IResponseService
             {
                 new()
                 {
-                    Code = "MISSING_MANDATORY_HEADERS",
-                    Title = "Missing mandatory headers",
-                    Detail = "A mandatory header was not sent"
+                    Code = ErrorCodes.MissingMandatoryHeaders,
+                    Title = ErrorTitles.MissingMandatoryHeaders,
+                    Detail = ErrorDetails.MissingMandatoryHeaders
                 }
             },
             Meta = new ResponseMeta()
@@ -50,9 +51,9 @@ public class ResponseService : IResponseService
             {
                 new()
                 {
-                    Code = "RESOURCE_NOT_FOUND",
-                    Title = "Resource not found",
-                    Detail = "Resource not found"
+                    Code = ErrorCodes.ResourceNotFound,
+                    Title = ErrorTitles.ResourceNotFound,
+                    Detail = ErrorDetails.ResourceNotFound
                 }
             },
             Meta = new ResponseMeta()
@@ -67,9 +68,9 @@ public class ResponseService : IResponseService
             {
                 new()
                 {
-                    Code = "BAD_SIGNATURE",
-                    Title = "Bad signature",
-                    Detail = "Could not verify the message signature"
+                    Code = ErrorCodes.BadSignature,
+                    Title = ErrorTitles.BadSignature,
+                    Detail = ErrorDetails.BadSignature
                 }
             },
             Meta = new ResponseMeta()

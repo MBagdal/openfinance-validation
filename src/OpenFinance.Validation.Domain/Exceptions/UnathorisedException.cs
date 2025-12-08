@@ -9,7 +9,7 @@ namespace OpenFinance.Validation.Domain.Exceptions;
 public class UnauthorisedException : ValidationException
 {
     public UnauthorisedException(ErrorResponse errorResponse) 
-        : base((int)HttpStatusCode.Unauthorized, errorResponse, "Unauthorised")
+        : base(HttpStatusCode.Unauthorized, errorResponse, "Unauthorised")
     {
     }
 }

@@ -1,3 +1,4 @@
+using System.Net;
 using OpenFinance.Validation.Domain.ValueObjects;
 
 namespace OpenFinance.Validation.Domain.Exceptions;
@@ -7,10 +8,10 @@ namespace OpenFinance.Validation.Domain.Exceptions;
 /// </summary>
 public class ValidationException : Exception
 {
-    public int StatusCode { get; }
+    public HttpStatusCode StatusCode { get; }
     public ErrorResponse ErrorResponse { get; }
 
-    public ValidationException(int statusCode, ErrorResponse errorResponse, string? message = null)
+    public ValidationException(HttpStatusCode statusCode, ErrorResponse errorResponse, string? message = null)
         : base(message)
     {
         StatusCode = statusCode;

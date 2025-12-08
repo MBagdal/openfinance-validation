@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenFinance.Validation.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89bef53d6115bd6600315bc089f09bbd845ff698")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+364ee44247bda1c75bdaed4ebc154b441c59e6d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenFinance.Validation.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenFinance.Validation.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

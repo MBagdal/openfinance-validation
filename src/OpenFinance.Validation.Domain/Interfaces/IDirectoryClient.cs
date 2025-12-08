@@ -1,3 +1,5 @@
+using Microsoft.IdentityModel.Tokens;
+
 namespace OpenFinance.Validation.Domain.Interfaces;
 
 /// <summary>
@@ -8,5 +10,5 @@ public interface IDirectoryClient
     /// <summary>
     /// Obtém as chaves públicas do cliente (JWKS)
     /// </summary>
-    //Task<JsonWebKeySet> GetClientKeysAsync(ClientDetails client);
+    Task<JsonWebKeySet> GetClientKeysAsync(ClientDetails client);
 }
