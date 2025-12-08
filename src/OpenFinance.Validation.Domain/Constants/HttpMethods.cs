@@ -45,7 +45,7 @@ public static class HttpMethodHelper
     /// <summary>
     /// Verifica se o método HTTP pode ter body (POST, PUT, PATCH)
     /// </summary>
-    public static bool CanHaveRequestBody(string method)
+    public static bool HaveRequestBody(string method)
     {
         var upperMethod = method.ToUpperInvariant();
         return upperMethod == HttpMethods.Post 

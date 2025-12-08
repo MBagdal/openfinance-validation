@@ -34,7 +34,7 @@ public class ValidationOptions
     /// <param name="request">HttpRequest para análise</param>
     public void SetIdempotencyValidationFromRequest(HttpRequest request)
     {
-        IsIdempotencyValidationNecessary = HttpMethodHelper.IsIdempotent(request.Method);
+        IsIdempotencyValidationNecessary = HttpMethodHelper.RequiresIdempotencyValidation(request.Method);
     }
 
     /// <summary>
@@ -46,7 +46,7 @@ public class ValidationOptions
         var method = request.Method.ToUpperInvariant();
         
         SetIdempotencyValidationFromRequest(request);
-        IsPayloadExtractionNecessary = HttpMethodHelper.CanHaveRequestBody(method);
+        IsPayloadExtractionNecessary = HttpMethodHelper.HaveRequestBody(method);
         IsAudienceValidationNecessary = true;
     }
 }
