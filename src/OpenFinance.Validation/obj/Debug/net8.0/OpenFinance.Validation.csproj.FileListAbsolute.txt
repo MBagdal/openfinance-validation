@@ -20,3 +20,4 @@
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation/obj/Debug/net8.0/OpenFinance.Validation.pdb
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation/obj/Debug/net8.0/ref/OpenFinance.Validation.dll
 /Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation/bin/Debug/net8.0/OpenFinance.Validation.Infrastructure.xml
+/Users/marcoantoniobagdaldefigueiredo/Desktop/Opf/OpenFinance.Validation/src/OpenFinance.Validation/obj/Debug/net8.0/OpenFinance.Validation.sourcelink.json

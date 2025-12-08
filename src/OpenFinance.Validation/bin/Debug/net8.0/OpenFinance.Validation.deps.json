@@ -148,6 +148,9 @@
         }
       },
       "OpenFinance.Validation.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+        },
         "runtime": {
           "OpenFinance.Validation.Domain.dll": {
             "assemblyVersion": "1.0.0",
