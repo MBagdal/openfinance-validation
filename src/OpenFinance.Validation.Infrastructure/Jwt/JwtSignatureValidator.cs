@@ -39,12 +39,15 @@ public class JwtSignatureValidator : IRequestSignatureValidator
             var clientJwks = await _directoryClient.GetClientKeysAsync(client);
             var clientOrganisationId = _utilsService.ExtractOrgIdFromJwksUri(client.JwksUri);
 
-            // Alternativa sem EnableBuffering - ler o body diretamente
+            request.EnableBuffering();
+            
             string signedRequestBody;
-            using (var reader = new StreamReader(request.Body, leaveOpen: true))
+            using (var reader = new StreamReader(request.Body, leaveOpen: true, encoding: System.Text.Encoding.UTF8))
             {
                 signedRequestBody = await reader.ReadToEndAsync();
             }
+            
+            request.Body.Position = 0;
 
             var payload = await ValidateSignedRequestAsync(
                 clientJwks,

@@ -23,7 +23,7 @@ public class HeaderValidator : IHeaderValidator
 
     public bool ValidateNonIdempotencyHeaders(HttpRequest request)
     {
-        return request.Headers.ContainsKey("x-fapi-interaction-id");
+        return HasInteractionId(request);
     }
 
     private bool HasContentType(string contentType)

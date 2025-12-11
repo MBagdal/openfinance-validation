@@ -35,6 +35,9 @@ public class ClientCredentialsPermissionValidator
         if (clientCert == null)
             return false;
 
+        if (tokenDetails.Cnf == null || !tokenDetails.Cnf.ContainsKey("x5t#S256"))
+            return false;
+
         var certThumbprint = _certificateService.GetCertThumbprint(clientCert);
         var tokenThumbprint = tokenDetails.Cnf.GetValueOrDefault("x5t#S256");
 

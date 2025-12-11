@@ -22,15 +22,15 @@ public class AuthenticationValidator : IAuthenticationValidator
         ClientCredentialsPermissionValidator permissionValidator,
         ILogger<AuthenticationValidator> logger)
     {
-        _authServerClient = authServerClient;
-        _certificateService = certificateService;
-        _permissionValidator = permissionValidator;
-        _logger = logger;
+        _authServerClient = authServerClient ?? throw new ArgumentNullException(nameof(authServerClient));
+        _certificateService = certificateService ?? throw new ArgumentNullException(nameof(certificateService));
+        _permissionValidator = permissionValidator ?? throw new ArgumentNullException(nameof(permissionValidator));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
     public async Task<TokenDetails?> ValidateAuthenticationAsync(HttpRequest request)
     {
-        var authHeader = request.Headers["Authorisation"].ToString();
+        var authHeader = request.Headers["Authorization"].ToString();
         if (string.IsNullOrEmpty(authHeader))
         {
             _logger.LogWarning("Authorization header is missing");

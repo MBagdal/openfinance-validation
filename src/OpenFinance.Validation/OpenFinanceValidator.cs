@@ -77,11 +77,6 @@ public class OpenFinanceValidator
             options.IsIdempotencyValidationNecessary,
             options.IsPayloadExtractionNecessary,
             options.IsAudienceValidationNecessary);
-        
-        if (!options.IsIdempotencyValidationNecessary && !options.IsPayloadExtractionNecessary)
-        {
-            options.AutoConfigureFromRequest(request);
-        }
 
         var tokenDetails = await ValidateAuthenticationAsync(request);
 

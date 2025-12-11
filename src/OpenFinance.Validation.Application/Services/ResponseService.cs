@@ -1,5 +1,5 @@
 using OpenFinance.Validation.Application.Interfaces;
-using OpenFinance.Validation.Domain.Constants.Erros;
+using OpenFinance.Validation.Domain.Constants.Errors;
 using OpenFinance.Validation.Domain.ValueObjects;
 
 namespace OpenFinance.Validation.Application.Services;

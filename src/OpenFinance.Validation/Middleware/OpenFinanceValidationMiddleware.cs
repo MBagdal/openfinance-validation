@@ -3,7 +3,7 @@ using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using OpenFinance.Validation.Domain.Constants.Erros;
+using OpenFinance.Validation.Domain.Constants.Errors;
 using OpenFinance.Validation.Domain.Exceptions;
 using OpenFinance.Validation.Domain.ValueObjects;
 
